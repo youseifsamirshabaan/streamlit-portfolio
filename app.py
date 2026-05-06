@@ -1,8 +1,6 @@
 
-from turtle import color
 
 import streamlit as st
-import pandas as pd
 
 
 st.set_page_config("Youseif Hegazy CV")
