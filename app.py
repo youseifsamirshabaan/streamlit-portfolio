@@ -2,10 +2,10 @@ import streamlit as st
 import base64
 import textwrap
 
-# 1. إعدادات الصفحة
+#El 3enwan
 st.set_page_config(page_title="Youseif Hegazy | Data Engineer", layout="wide")
 
-# دالة تحويل الصورة
+#Tahweel El Sora
 def get_base64_of_bin_file(bin_file):
     try:
         with open(bin_file, 'rb') as f:
@@ -16,7 +16,7 @@ def get_base64_of_bin_file(bin_file):
 
 img_html = get_base64_of_bin_file("logo.png")
 
-# 2. التنسيق (CSS)
+#EL css
 style = """
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <style>
@@ -41,7 +41,7 @@ a { color: inherit !important; text-decoration: none !important; }
 </style>
 """
 
-# 3. المحتوى (HTML)
+#El html
 html = f"""
 <div class="cv-wrapper">
 <div class="side-bar">
@@ -110,6 +110,6 @@ html = f"""
 </div>
 """
 
-# الرندرة باستخدام dedent لضمان نظافة الكود تماماً
+#Taked El html , css
 st.markdown(style, unsafe_allow_html=True)
 st.markdown(textwrap.dedent(html), unsafe_allow_html=True)
